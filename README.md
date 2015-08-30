@@ -92,6 +92,72 @@ What is a Resource?
     
     where text, JSON, XML. XML and JSON are the most popular representations of resources.
     
+URL format: 
+    
+    Each resource in REST architecture is identified by its URI, Uniform Resource Identifier. A URI is of following format:
+
+    <protocol>://<service-name>/<ResourceType>/<ResourceID>
+    
+HTTP Request:
+
+    A HTTP Request has five major parts:
+
+        Verb- Indicate HTTP methods such as GET, POST, DELETE, PUT etc.
+
+        URI- Uniform Resource Identifier (URI) to identify the resource on server
+
+        HTTP Version- Indicate HTTP version, for example HTTP v1.1 .
+
+        Request Header- Contains metadata for the HTTP Request message as key-value pairs. For example, client ( or browser)         type, format supported by client, format of message body, cache settings etc.
+
+        Request Body- Message content or Resource representation.
+        
+HTTP Response:
+    A HTTP Response has four major parts:
+
+        Status/Response Code- Indicate Server status for the requested resource. For example 404 means resource not found and         200 means response is ok.
+
+        HTTP Version- Indicate HTTP version, for example HTTP v1.1 .
+
+        Response Header- Contains metadata for the HTTP Response message as key-value pairs. For example, content length,            content type, response date, server type etc.
+        
+             Header & Description: 
+             
+                Date  
+                
+                Date and Time of the resource when it was created.
+                
+                Last Modified
+                	
+                Date and Time of the resource when it was last modified.
+                
+                Cache-Control: 
+                	
+                Primary header to control caching.
+                
+                    Public: Indicates that resource is cachable by any component.
+                    
+                    Private: Indicates that resource is cachable by only client and server, no intermediary can cache the
+                    resource.
+                    
+                    no-cache/no-store: Indicates that resource is not cachable
+                    
+                    max-age: Indicates the caching is valid up to max-age in seconds. After this, client has to make another                     request.
+                
+                Expires
+                	
+                Expiration date and time of caching
+                
+                Age
+                	
+                Duration in seconds from when resource was fetched from the server.
+
+        Response Body- Response message content or Resource representation.
+        
+   
+    
+
+    
 
       
 
