@@ -39,3 +39,5 @@ Architectural constraints
       Responses must therefore, implicitly or explicitly, define themselves as cacheable, or not, to prevent clients from reusing stale or inappropriate data in response to further requests. 
       
       Well-managed caching partially or completely eliminates some client–server interactions, further improving scalability and performance.
+      
+    
